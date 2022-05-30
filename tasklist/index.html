@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and the DOM</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 id="headline">Pre-Ride Inspections</h1>
+        <div class="group">
+          <label for="main">What's your task?</label>
+          <input type="text" id="main" class="input-main">
+          <button class="btn-main">Add Task</button>
+        </div>
+      </header>
+
+      <button class="btn-toggle">Hide List</button>
+
+      <div class="list-container">
+        <ul aria-live="polite">
+          <li>Check tire pressure!</li>
+          <li class="highlight">Check brakelines and for brake pressure!</li>
+          <li>Inspect brake pads and rotors for execessive wear or damage!</li>
+          <li>Inspect all lights and make sure the turn signals are functioning.</li>
+          <li class="highlight">Turn the motorcycle on and let it warm up for at least a few minutes.</li>
+          <li class="highlight">Ride safe, have fun, look twice and ride within your abilities!</li>
+        </ul>
+        <button class="btn-remove">Remove Last Task</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
