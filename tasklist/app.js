@@ -5,12 +5,11 @@ const btnRemove = document.querySelector('.btn-remove');
 btnCreate.addEventListener('click', () => {
   const input = document.querySelector('.input-main');
   const list = document.querySelector('ul');
+  const item = document.createElement('li');
 
-list.insertAdjacentHTML(
-  'afterbegin'
-  `<li>${input.value}</li>`
-);
-  input.value = '';
+item.textContent = input.value;
+input.value = '';
+list.prepend(item);
 });
 
 
@@ -27,5 +26,5 @@ btnToggle.addEventListener('click', () => {
 });
 
 btnRemove.addEventListener('click', () => {
-  const lastItem = document.querySelector('li:first-child');       lastItem.remove();                  
+  const lastItem = document.querySelector('li:first-child');       lastItem.remove();
 });
