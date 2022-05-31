@@ -95,13 +95,13 @@ text-align: center;
 /* ---- Page Elements ---- */
 
 .logo {
-	width: 190px;
+	width: 350px;
 }
 .headline {
 	margin-bottom: 0;
 }
 .feat-img {
-	border-radius: 5px;
+	border-radius: 10px;
 }
 .button {
 	color: #fff;
