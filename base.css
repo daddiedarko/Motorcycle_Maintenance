@@ -95,13 +95,17 @@ text-align: center;
 /* ---- Page Elements ---- */
 
 .logo {
+<<<<<<< HEAD
 	width: 250px;
+=======
+	width: 350px;
+>>>>>>> 1220b4c70d00a164c2f98b77bf651391f9ceef6a
 }
 .headline {
 	margin-bottom: 0;
 }
 .feat-img {
-	border-radius: 5px;
+	border-radius: 10px;
 }
 .button {
 	color: #fff;
